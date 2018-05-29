@@ -62,7 +62,8 @@
         "4.0.1",
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -107,7 +108,8 @@
     },
     "Microsoft.Diagnostics.Tracing.EventSource.Redist": {
       "StableVersions": [
-        "2.0.0"
+        "2.0.0",
+        "2.1.0"
       ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
@@ -127,7 +129,8 @@
         "1.0.1",
         "1.0.2",
         "1.1.0",
-        "2.0.0"
+        "2.0.0",
+        "2.2.0"
       ],
       "BaselineVersion": "2.0.0",
       "InboxOn": {}
@@ -138,7 +141,8 @@
         "1.0.1",
         "1.0.2",
         "1.1.0",
-        "2.0.0"
+        "2.0.0",
+        "2.2.0"
       ],
       "BaselineVersion": "2.0.0",
       "InboxOn": {}
@@ -184,7 +188,8 @@
         "10.0.1",
         "10.0.0",
         "10.1.0",
-        "10.2.0"
+        "10.2.0",
+        "10.4.0"
       ],
       "BaselineVersion": "10.2.0",
       "InboxOn": {
@@ -258,7 +263,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -274,7 +280,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -287,6 +294,9 @@
       }
     },
     "Microsoft.Win32.SystemEvents": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
         "4.0.0.0": "4.5.0",
@@ -294,14 +304,21 @@
       }
     },
     "Microsoft.Windows.Compatibility": {
+      "StableVersions": [
+        "2.1.0"
+      ],
       "InboxOn": {}
     },
     "Microsoft.Windows.Compatibility.Shims": {
+      "StableVersions": [
+        "2.1.0"
+      ],
       "InboxOn": {}
     },
     "Microsoft.XmlSerializer.Generator": {
       "StableVersions": [
-        "1.0.0"
+        "1.0.0",
+        "2.0.0"
       ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
@@ -459,7 +476,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.6.0",
       "InboxOn": {}
@@ -583,7 +601,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -603,7 +622,8 @@
     },
     "System.CodeDom": {
       "StableVersions": [
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -697,7 +717,8 @@
         "1.2.0",
         "1.1.36",
         "1.3.0",
-        "1.4.0"
+        "1.4.0",
+        "1.6.0"
       ],
       "BaselineVersion": "1.4.0",
       "InboxOn": {
@@ -814,7 +835,8 @@
         "4.0.10",
         "4.1.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -846,6 +868,9 @@
       }
     },
     "System.ComponentModel.Composition": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "net45": "4.0.0.0",
         "monoandroid10": "Any",
@@ -979,7 +1004,8 @@
     "System.Composition": {
       "StableVersions": [
         "1.0.31",
-        "1.1.0"
+        "1.1.0",
+        "1.3.0"
       ],
       "BaselineVersion": "1.1.0",
       "InboxOn": {}
@@ -987,7 +1013,8 @@
     "System.Composition.AttributedModel": {
       "StableVersions": [
         "1.0.31",
-        "1.1.0"
+        "1.1.0",
+        "1.3.0"
       ],
       "BaselineVersion": "1.1.0",
       "InboxOn": {},
@@ -1001,7 +1028,8 @@
     "System.Composition.Convention": {
       "StableVersions": [
         "1.0.31",
-        "1.1.0"
+        "1.1.0",
+        "1.3.0"
       ],
       "BaselineVersion": "1.1.0",
       "InboxOn": {},
@@ -1015,7 +1043,8 @@
     "System.Composition.Hosting": {
       "StableVersions": [
         "1.0.31",
-        "1.1.0"
+        "1.1.0",
+        "1.3.0"
       ],
       "BaselineVersion": "1.1.0",
       "InboxOn": {},
@@ -1029,7 +1058,8 @@
     "System.Composition.Runtime": {
       "StableVersions": [
         "1.0.31",
-        "1.1.0"
+        "1.1.0",
+        "1.3.0"
       ],
       "BaselineVersion": "1.1.0",
       "InboxOn": {},
@@ -1043,7 +1073,8 @@
     "System.Composition.TypedParts": {
       "StableVersions": [
         "1.0.31",
-        "1.1.0"
+        "1.1.0",
+        "1.3.0"
       ],
       "BaselineVersion": "1.1.0",
       "InboxOn": {},
@@ -1063,7 +1094,8 @@
     },
     "System.Configuration.ConfigurationManager": {
       "StableVersions": [
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -1171,6 +1203,9 @@
       }
     },
     "System.Data.DataSetExtensions": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "net45": "4.0.0.0"
       },
@@ -1195,6 +1230,9 @@
       }
     },
     "System.Data.Odbc": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
         "4.0.0.0": "4.5.0",
@@ -1231,7 +1269,8 @@
       "StableVersions": [
         "4.1.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -1361,7 +1400,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.1"
+        "4.4.1",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.1",
       "InboxOn": {
@@ -1379,6 +1419,9 @@
       }
     },
     "System.Diagnostics.EventLog": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
         "4.0.0.0": "4.5.0",
@@ -1410,6 +1453,9 @@
       }
     },
     "System.Diagnostics.PerformanceCounter": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "monoandroid10": "Any",
         "monotouch10": "Any",
@@ -1616,6 +1662,9 @@
       }
     },
     "System.DirectoryServices": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "net45": "4.0.0.0"
       },
@@ -1624,6 +1673,9 @@
       }
     },
     "System.DirectoryServices.AccountManagement": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "net45": "4.0.0.0"
       },
@@ -1632,6 +1684,9 @@
       }
     },
     "System.DirectoryServices.Protocols": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "net45": "4.0.0.0"
       },
@@ -1648,6 +1703,9 @@
       }
     },
     "System.Drawing.Common": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "monoandroid10": "Any",
         "monotouch10": "Any",
@@ -2014,7 +2072,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -2159,7 +2218,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -2172,6 +2232,9 @@
       }
     },
     "System.IO.Pipelines": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
         "4.0.0.0": "4.5.0",
@@ -2199,7 +2262,8 @@
     "System.IO.Pipes.AccessControl": {
       "StableVersions": [
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -2214,7 +2278,8 @@
     },
     "System.IO.Ports": {
       "StableVersions": [
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -2255,7 +2320,8 @@
     },
     "System.Json": {
       "StableVersions": [
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -2429,6 +2495,9 @@
       }
     },
     "System.Management": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "net45": "4.0.0.0"
       },
@@ -2442,9 +2511,11 @@
       }
     },
     "System.Memory": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "netcoreapp2.1": "4.1.0.0",
-        "netcoreapp2.2": "4.1.0.0",
         "monoandroid10": "Any",
         "monotouch10": "Any",
         "uap10.0.16300": "4.1.0.0",
@@ -2586,7 +2657,8 @@
         "4.0.0",
         "4.0.1",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -2967,6 +3039,9 @@
       }
     },
     "System.Net.WebSockets.WebSocketProtocol": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
         "4.0.0.0": "4.5.0",
@@ -3000,7 +3075,8 @@
         "4.1.0",
         "4.1.1",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -3194,7 +3270,8 @@
         "4.0.0",
         "4.0.1",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -3337,7 +3414,8 @@
         "1.1.0",
         "1.2.0",
         "1.4.1",
-        "1.5.0"
+        "1.5.0",
+        "1.7.0"
       ],
       "BaselineVersion": "1.5.0",
       "InboxOn": {
@@ -3403,7 +3481,8 @@
         "4.0.0",
         "4.1.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -3563,6 +3642,9 @@
       }
     },
     "System.Runtime.Caching": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {
         "net45": "4.0.0.0",
         "monoandroid10": "Any",
@@ -3578,7 +3660,8 @@
     },
     "System.Runtime.CompilerServices.Unsafe": {
       "StableVersions": [
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "InboxOn": {
         "uap10.0.16300": "4.0.5.0"
@@ -4095,7 +4178,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -4165,7 +4249,8 @@
       "StableVersions": [
         "4.2.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -4240,7 +4325,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -4256,7 +4342,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -4296,7 +4383,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -4342,7 +4430,8 @@
     },
     "System.Security.Cryptography.Xml": {
       "StableVersions": [
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -4354,7 +4443,8 @@
     },
     "System.Security.Permissions": {
       "StableVersions": [
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -4408,7 +4498,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -4583,6 +4674,9 @@
       }
     },
     "System.ServiceModel.Syndication": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
         "4.0.0.0": "4.5.0",
@@ -4627,7 +4721,8 @@
       "StableVersions": [
         "4.1.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -4692,7 +4787,8 @@
         "4.0.0",
         "4.0.1",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
@@ -4761,7 +4857,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -4864,7 +4961,8 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {},
@@ -4877,6 +4975,9 @@
       }
     },
     "System.Threading.Channels": {
+      "StableVersions": [
+        "4.6.0"
+      ],
       "InboxOn": {},
       "AssemblyVersionInPackageVersion": {
         "4.0.0.0": "4.5.0",
@@ -4951,7 +5052,8 @@
         "4.6.0",
         "4.5.25",
         "4.7.0",
-        "4.8.0"
+        "4.8.0",
+        "4.10.0"
       ],
       "BaselineVersion": "4.8.0",
       "InboxOn": {
@@ -4974,15 +5076,15 @@
       "StableVersions": [
         "4.0.0",
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
-        "monoandroid10": "Any",
-        "monotouch10": "Any",
         "netcoreapp2.0": "4.1.1.0",
         "netcoreapp2.1": "4.3.0.0",
-        "netcoreapp2.2": "4.3.0.0",
+        "monoandroid10": "Any",
+        "monotouch10": "Any",
         "uap10.0.16300": "4.3.0.0",
         "xamarinios10": "Any",
         "xamarinmac20": "Any",
@@ -5132,7 +5234,8 @@
     "System.ValueTuple": {
       "StableVersions": [
         "4.3.0",
-        "4.4.0"
+        "4.4.0",
+        "4.6.0"
       ],
       "BaselineVersion": "4.4.0",
       "InboxOn": {
