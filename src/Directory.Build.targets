@@ -10,6 +10,14 @@
     <WarningsAsErrors Condition="'$(WarningsAsErrors)' == 'NU1605'"></WarningsAsErrors>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <!--
+    Hack workaround to skip the GenerateCompiledExpressionsTempFile target in
+    Microsoft.WorkflowBuildExtensions.targets target that always runs in VS
+    -->
+    <GenerateCompiledExpressionsTempFilePathForEditing></GenerateCompiledExpressionsTempFilePathForEditing>
+  </PropertyGroup> 
+
   <Import Project="..\Directory.Build.targets" />
   
   <Target Name="_CheckForInvalidConfigurationAndPlatform" />
