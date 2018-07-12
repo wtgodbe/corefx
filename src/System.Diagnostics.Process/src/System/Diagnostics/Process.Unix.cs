@@ -414,6 +414,13 @@ namespace System.Diagnostics
             }
 
             argvList.Add(argv0);
+
+            // If UseShellExecute=true, we are running the 'open' command, which needs to be told it is about to receive an arg string.
+            if (psi.UseShellExecute)
+            {
+                argvList.Add("--args");
+            }
+            
             if (!string.IsNullOrEmpty(psi.Arguments))
             {
                 ParseArgumentsIntoList(psi.Arguments, argvList);
