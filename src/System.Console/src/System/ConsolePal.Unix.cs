@@ -339,6 +339,13 @@ namespace System
         /// </summary>
         private static bool s_everReceivedCursorPositionResponse;
 
+        /// <summary>
+        /// Tracks if this is out first attempt to send a cursor posotion request. If it is, we start the
+        /// timer immediately (i.e. minChar = 0), but we use a slightly longer timeout to avoid the CPR response
+        /// being written to the console.
+        /// </summary>
+        private static bool s_firstCursorPositionRequest = true;
+
         /// <summary>Gets the current cursor position.  This involves both writing to stdout and reading stdin.</summary>
         private static unsafe void GetCursorPosition(out int left, out int top)
         {
@@ -357,6 +364,15 @@ namespace System
             // just allocate, rather than employing any complicated pooling strategy.
             int readBytesPos = 0;
             Span<byte> readBytes = stackalloc byte[256];
+            int initialTimeout = 0;
+            if (s_firstCursorPositionRequest)
+            {
+                initialTimeout = 15;
+            }
+            else 
+            {
+                initialTimeout = decisecondsTimeout;
+            }
 
             // Synchronize with all other stdin readers.  We need to do this in case multiple threads are
             // trying to read/write concurrently, and to minimize the chances of resulting conflicts.
@@ -373,7 +389,7 @@ namespace System
                 // minChars == 1.  With that, the timer won't start until the first character is
                 // received.  This makes the mechanism more reliable when there are high latencies
                 // involved in reading/writing, such as when accessing a remote system.
-                Interop.Sys.InitializeConsoleBeforeRead(minChars: (byte)(s_everReceivedCursorPositionResponse ? 1 : 0), decisecondsTimeout: 10);
+                Interop.Sys.InitializeConsoleBeforeRead(minChars: (byte)(s_everReceivedCursorPositionResponse ? 1 : 0), initialTimeout: 10);
                 try
                 {
                     // Write out the cursor position report request.
@@ -447,6 +463,7 @@ namespace System
                 finally
                 {
                     Interop.Sys.UninitializeConsoleAfterRead();
+                    s_firstCursorPositionRequest = false;
                 }
 
 
