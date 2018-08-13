@@ -367,7 +367,7 @@ namespace System
             int initialTimeout = 0;
             if (s_firstCursorPositionRequest)
             {
-                initialTimeout = 15;
+                initialTimeout = 150;
             }
             else 
             {
@@ -389,7 +389,7 @@ namespace System
                 // minChars == 1.  With that, the timer won't start until the first character is
                 // received.  This makes the mechanism more reliable when there are high latencies
                 // involved in reading/writing, such as when accessing a remote system.
-                Interop.Sys.InitializeConsoleBeforeRead(minChars: (byte)(s_everReceivedCursorPositionResponse ? 1 : 0), initialTimeout: 10);
+                Interop.Sys.InitializeConsoleBeforeRead(minChars: (byte)(s_everReceivedCursorPositionResponse ? 1 : 0), initialTimeout);
                 try
                 {
                     // Write out the cursor position report request.
@@ -456,6 +456,9 @@ namespace System
                     // else back into the StdInReader.
                     ReadRowOrCol(bracketPos, semiPos, r, readBytes, ref top);
                     ReadRowOrCol(semiPos, rPos, r, readBytes, ref left);
+
+                    // Mark that we've successfully received a CPR response at least once.
+                    s_everReceivedCursorPositionResponse = true;
                 }
                 finally
                 {
