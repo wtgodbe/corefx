@@ -364,15 +364,6 @@ namespace System
             // just allocate, rather than employing any complicated pooling strategy.
             int readBytesPos = 0;
             Span<byte> readBytes = stackalloc byte[256];
-            int initialTimeout = 0;
-            if (s_firstCursorPositionRequest)
-            {
-                initialTimeout = 150;
-            }
-            else 
-            {
-                initialTimeout = decisecondsTimeout;
-            }
 
             // Synchronize with all other stdin readers.  We need to do this in case multiple threads are
             // trying to read/write concurrently, and to minimize the chances of resulting conflicts.
@@ -383,13 +374,15 @@ namespace System
             {
                 // Because the CPR request/response protocol involves blocking until we get a certain
                 // response from the terminal, we want to avoid doing so if we don't know the terminal
-                // will definitely response.  As such, we start with minChars == 0, which causes the
+                // will definitely respond.  As such, we start with minChars == 0, which causes the
                 // terminal's read timer to start immediately.  Once we've received a response for
                 // a request such that we know the terminal supports the protocol, we then specify
                 // minChars == 1.  With that, the timer won't start until the first character is
                 // received.  This makes the mechanism more reliable when there are high latencies
-                // involved in reading/writing, such as when accessing a remote system.
-                Interop.Sys.InitializeConsoleBeforeRead(minChars: (byte)(s_everReceivedCursorPositionResponse ? 1 : 0), initialTimeout);
+                // involved in reading/writing, such as when accessing a remote system. We also extend
+                // the timeout on the very first request to 15 seconds, to account for potential latency
+                // before we know if we will receive a response.
+                Interop.Sys.InitializeConsoleBeforeRead(minChars: (byte)(s_everReceivedCursorPositionResponse ? 1 : 0), decisecondsTimeout: (byte)(s_firstCursorPositionRequest ? 150 : 10));
                 try
                 {
                     // Write out the cursor position report request.
